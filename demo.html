@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="demo">
+<head>
+    <script src="base/jquery-2.1.4.js"></script>
+    <script src="base/angular.js"></script>
+    <script src="src/ui-datacell.js"></script>
+    <script>
+        angular.module('demo', ['ui-datacell']).controller();
+    </script>
+</head>
+<body>
+    <div datacell style="width:200px;height:23px;border:1px solid blue;">
+        <div datacell-viewer>The value is {{value}}</div>
+        <input datacell-editor ng-model="value" />
+    </div>
+</body>
+</html>
